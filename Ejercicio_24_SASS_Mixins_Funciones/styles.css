@@ -1,0 +1,58 @@
+.btn-success {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #28a745;
+  color: white;
+}
+.btn-success:hover {
+  background-color: rgb(25.2173913043, 105.2826086957, 43.5);
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #dc3545;
+  color: white;
+}
+.btn-danger:hover {
+  background-color: rgb(167.4810126582, 29.0189873418, 42.2848101266);
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ffc107;
+  color: white;
+}
+.btn-warning:hover {
+  background-color: rgb(185.5, 139.125, 0);
+  transform: scale(1.05);
+}
+.btn-warning {
+  color: #333;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  margin: 20px auto;
+  background-color: #eee;
+  border: 2px dashed #ccc;
+}/*# sourceMappingURL=styles.css.map */

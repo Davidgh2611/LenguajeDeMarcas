@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'base';
+
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

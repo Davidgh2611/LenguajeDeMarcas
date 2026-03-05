@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19: Componentes Complejos</title>
+    <!-- Tailwind CSS Local -->
+    <link rel="stylesheet" href="../../tailwind-built.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-slate-100 p-10 flex items-center justify-center min-h-screen font-sans">
+
+    <div class="max-w-sm bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+        
+        <div class="relative group">
+            <img class="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Casa Moderna">
+            
+            <div class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg">
+                Nuevo
+            </div>
+            
+            <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-slate-900 font-bold px-3 py-1 rounded-lg shadow-md">
+                $450,000
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="flex items-center space-x-1 mb-2">
+                <span class="text-yellow-400 material-icons text-sm">star</span>
+                <span class="text-sm font-semibold text-slate-700">4.9</span>
+                <span class="text-sm text-slate-400">(120 reseñas)</span>
+            </div>
+
+            <h3 class="text-xl font-extrabold text-slate-800 truncate mb-1">Residencial Los Olivos</h3>
+            <p class="text-slate-500 text-sm flex items-center mb-4">
+                <span class="material-icons text-sm mr-1">location_on</span>
+                Av. Principal 123, Madrid
+            </p>
+
+            <div class="flex justify-between items-center text-sm text-slate-600 mb-6 border-t border-slate-100 pt-4">
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">bed</span>
+                    <span class="font-medium">3 Habs</span>
+                </div>
+                <div class="border-l border-slate-100 h-8"></div>
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">bathtub</span>
+                    <span class="font-medium">2 Baños</span>
+                </div>
+                <div class="border-l border-slate-100 h-8"></div>
+                <div class="flex flex-col items-center">
+                    <span class="material-icons text-blue-500 mb-1">straighten</span>
+                    <span class="font-medium">120m²</span>
+                </div>
+            </div>
+
+            <div class="flex space-x-3">
+                <button class="flex-[3] bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 active:scale-95 transition-all shadow-lg shadow-slate-200">
+                    Ver Detalles
+                </button>
+                <button
+                    class="flex-1 flex items-center justify-center border border-slate-200 rounded-xl text-slate-400 hover:text-red-500 hover:border-red-500 active:scale-95 transition-all">
+                    <span class="material-icons">favorite_border</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+$color-principal: #3498db;
+$color-secundario: #2ecc71;
+$color-texto: #333;
+$fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$padding-estandar: 20px;
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: $padding-estandar;
+    text-align: center;
+    font-family: $fuente-base;
+
+    h1 {
+        color: $color-principal;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $color-texto;
+        line-height: 1.6;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 25px;
+        background-color: $color-secundario;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background-color: darken($color-secundario, 10%);
+        }
+    }
+}
