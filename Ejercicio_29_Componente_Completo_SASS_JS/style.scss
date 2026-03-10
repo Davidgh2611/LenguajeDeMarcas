@@ -1,0 +1,44 @@
+$primary: #3498db;
+$gray-light: #f4f4f4;
+$white: #ffffff;
+
+.tabs-container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: sans-serif;
+
+    .tabs-header {
+        display: flex;
+        border-bottom: 2px solid $gray-light;
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: lighten($primary, 40%);
+            }
+
+            &.active {
+                border-bottom: 2px solid $primary;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .tabs-content {
+        padding: 20px;
+
+        .tab-pane {
+            display: none; 
+
+            &.active {
+                display: block; 
+            }
+        }
+    }
+}

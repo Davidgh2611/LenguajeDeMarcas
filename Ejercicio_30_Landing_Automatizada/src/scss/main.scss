@@ -1,0 +1,45 @@
+$primary-color: #2c3e50;
+$accent-color: #e74c3c;
+$white: #ffffff;
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary-color;
+    color: $white;
+    padding: 1rem;
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        
+        li a {
+            color: $white;
+            text-decoration: none;
+            margin: 0 15px;
+            &:hover { color: $accent-color; }
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: $white;
+            margin: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links { display: none; } 
+    .burger { display: block; }   
+}
