@@ -1,0 +1,24 @@
+.main-header {
+    background-color: #1a1a1a; // Negro elegante
+    color: #d4af37; // Dorado
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    // Crea columnas automáticas de mínimo 300px
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}

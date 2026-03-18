@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="datos.xsd">
+  <vehiculo id="101">
+    <marca>Tesla</marca>
+    <modelo>Model S</modelo>
+    <precio>89990.00</precio>
+    <descripcion>Sedán eléctrico de altas prestaciones con autonomía extendida.</descripcion>
+  </vehiculo>
+  <vehiculo id="102">
+    <marca>Porsche</marca>
+    <modelo>Taycan</modelo>
+    <precio>92000.00</precio>
+    <descripcion>Deportivo eléctrico con ADN de circuito y carga ultra rápida.</descripcion>
+  </vehiculo>
+  <vehiculo id="103">
+    <marca>Audi</marca>
+    <modelo>RS e-tron GT</modelo>
+    <precio>145000.00</precio>
+    <descripcion>Gran turismo eléctrico con diseño aerodinámico avanzado.</descripcion>
+  </vehiculo>
+</concesionario>

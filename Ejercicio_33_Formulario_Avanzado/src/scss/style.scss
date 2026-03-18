@@ -1,0 +1,34 @@
+@import 'variables';
+@import 'mixins';
+
+$color-error: #e74c3c;
+$color-exito: #2ecc71;
+
+.form-group {
+    margin-bottom: 20px;
+    
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: 0.3s all ease;
+    }
+
+    .mensaje-error {
+        display: none;
+        color: $color-error;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    // Estados dinámicos controlados por JS
+    &.is-invalid {
+        input { @include estado-input($color-error, rgba($color-error, 0.2)); @include animacion-error; }
+        .mensaje-error { display: block; }
+    }
+
+    &.is-valid {
+        input { @include estado-input($color-exito, rgba($color-exito, 0.2)); }
+    }
+}

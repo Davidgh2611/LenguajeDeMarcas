@@ -1,0 +1,42 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s all ease;
+}
+.form-group .mensaje-error {
+  display: none;
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.form-group.is-invalid input {
+  border: 2px solid #e74c3c;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.2);
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+.form-group.is-invalid .mensaje-error {
+  display: block;
+}
+.form-group.is-valid input {
+  border: 2px solid #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.2);
+}

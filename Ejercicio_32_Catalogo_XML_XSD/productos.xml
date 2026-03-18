@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="productos.xsd">
+  <producto id="1">
+    <nombre>Teclado Mecánico</nombre>
+    <precio>85.50</precio>
+    <descripcion>Teclado RGB con switches blue.</descripcion>
+    <categoria>Periféricos</categoria>
+  </producto>
+  <producto id="2">
+    <nombre>Ratón Gaming</nombre>
+    <precio>45.00</precio>
+    <descripcion>Sensor óptico de 16000 DPI.</descripcion>
+    <categoria>Periféricos</categoria>
+  </producto>
+  </catalogo>

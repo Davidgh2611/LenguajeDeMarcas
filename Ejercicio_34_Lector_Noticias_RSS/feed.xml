@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="feed.xsd">
+  <channel>
+    <title>Tech Daily News</title>
+    <item>
+      <title>El salto a la computación cuántica</title>
+      <author>Alex Rivera</author>
+      <pubDate>2026-03-15</pubDate>
+      <description>Nuevos procesadores prometen romper la barrera del binario este año.</description>
+    </item>
+    <item>
+      <title>IA y Creatividad</title>
+      <author>Marta Gómez</author>
+      <pubDate>2026-03-17</pubDate>
+      <description>¿Pueden los modelos generativos superar la intuición humana en el diseño?</description>
+    </item>
+    </channel>
+</rss>

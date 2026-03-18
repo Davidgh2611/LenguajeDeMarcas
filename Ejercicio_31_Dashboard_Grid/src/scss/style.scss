@@ -1,0 +1,9 @@
+// src/scss/style.scss
+@import 'variables';
+@import 'layout';
+@import 'components';
+
+// Añade esto al final para probar
+body {
+    background-color: #f0f0f0;
+}

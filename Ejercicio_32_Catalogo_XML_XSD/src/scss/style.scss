@@ -1,0 +1,22 @@
+$primario: #2ecc71;
+$texto: #333;
+
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    
+    &:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+    h3 { color: $primario; margin-top: 0; }
+    .precio { font-weight: bold; font-size: 1.2rem; display: block; margin-top: 10px; }
+    .categoria { font-size: 0.8rem; color: #777; text-transform: uppercase; }
+}

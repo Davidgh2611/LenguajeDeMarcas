@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Grid + SCSS</title>
+    <link rel="stylesheet" href="dist/css/style.css"></head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <button id="btn-menu" class="btn-toggle">☰</button>
+            <span class="logo">Mi Dashboard</span>
+        </header>
+
+        <aside class="sidebar" id="sidebar">
+            <nav class="menu">
+                <a href="#">🏠 Inicio</a>
+                <a href="#">📊 Reportes</a>
+                <a href="#">⚙️ Ajustes</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <article class="card"><h3>Usuarios</h3><p>1,250</p></article>
+            <article class="card"><h3>Ventas</h3><p>$12,400</p></article>
+            <article class="card"><h3>Rendimiento</h3><p>85%</p></article>
+            <article class="card"><h3>Alertas</h3><p>3 pendientes</p></article>
+        </main>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

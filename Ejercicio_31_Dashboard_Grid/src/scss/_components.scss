@@ -1,0 +1,18 @@
+.card {
+    background: $blanco;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    h3 { margin-top: 0; color: $bg-oscuro; }
+}
+
+.btn-toggle {
+    background: none;
+    border: 1px solid $blanco;
+    color: $blanco;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover { background: rgba(255,255,255,0.1); }
+}
