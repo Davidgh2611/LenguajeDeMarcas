@@ -14,7 +14,7 @@
 
 .news-card {
     background: #fff;
-    border-top: 5px solid #222; // Estilo periódico serio
+    border-top: 5px solid #222; 
     padding: 20px;
     transition: all 0.3s ease;
     @include card-shadow(#000);
@@ -22,7 +22,7 @@
     &:hover {
         transform: translateY(-5px);
         @include card-shadow(#000, 0.2);
-        border-top-color: #e74c3c; // Cambio de color en hover
+        border-top-color: #e74c3c; 
     }
 
     small { color: #888; text-transform: uppercase; letter-spacing: 1px; }

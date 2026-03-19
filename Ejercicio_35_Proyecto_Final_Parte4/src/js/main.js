@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedor = document.getElementById('app-catalogo');
     const buscador = document.getElementById('buscador');
 
-    // 1. Cargar datos inicialmente
     async function cargarVehiculos() {
         try {
             const res = await fetch('datos.xml');
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (e) { console.error("Error SPA:", e); }
     }
 
-    // 2. Renderizar nodos en el DOM
     function renderizar(lista) {
         contenedor.innerHTML = '';
         lista.forEach(v => {
@@ -25,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const div = document.createElement('article');
             div.className = 'vehiculo-card';
-            // Guardamos marca y modelo en minúsculas para facilitar el filtro después
             div.dataset.info = `${marca} ${modelo} ${desc}`.toLowerCase();
             
             div.innerHTML = `
@@ -37,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Lógica de Filtrado Real-time
     buscador.addEventListener('input', (e) => {
         const termino = e.target.value.toLowerCase();
         const cards = document.querySelectorAll('.vehiculo-card');

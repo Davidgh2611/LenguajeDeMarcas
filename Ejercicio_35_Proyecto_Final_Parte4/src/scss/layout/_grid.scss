@@ -1,6 +1,6 @@
 .main-header {
-    background-color: #1a1a1a; // Negro elegante
-    color: #d4af37; // Dorado
+    background-color: #1a1a1a; 
+    color: #d4af37; 
     padding: 2rem;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -15,7 +15,6 @@
 
 .grid-container {
     display: grid;
-    // Crea columnas automáticas de mínimo 300px
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     padding: 40px;

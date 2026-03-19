@@ -9,13 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const productos = xml.getElementsByTagName("producto");
 
             Array.from(productos).forEach(prod => {
-                // Extraer datos del nodo XML
                 const nombre = prod.getElementsByTagName("nombre")[0].textContent;
                 const precio = prod.getElementsByTagName("precio")[0].textContent;
                 const desc = prod.getElementsByTagName("descripcion")[0].textContent;
                 const cat = prod.getElementsByTagName("categoria")[0].textContent;
 
-                // Crear elemento HTML
                 const card = document.createElement('div');
                 card.className = 'producto-card';
                 card.innerHTML = `

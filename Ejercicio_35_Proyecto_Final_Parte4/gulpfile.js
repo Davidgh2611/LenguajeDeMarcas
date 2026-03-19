@@ -1,11 +1,11 @@
 const { src, dest, watch, series } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const cleanCSS = require('gulp-clean-css'); // Minificador
+const cleanCSS = require('gulp-clean-css'); 
 
 function compileSass() {
   return src('src/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS()) // Minifica el CSS para producción
+    .pipe(cleanCSS()) 
     .pipe(dest('dist/css'));
 }
 

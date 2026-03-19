@@ -22,7 +22,6 @@ $color-exito: #2ecc71;
         margin-top: 5px;
     }
 
-    // Estados dinámicos controlados por JS
     &.is-invalid {
         input { @include estado-input($color-error, rgba($color-error, 0.2)); @include animacion-error; }
         .mensaje-error { display: block; }
